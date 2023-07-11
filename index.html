@@ -8,6 +8,52 @@
     <link rel="shortcut icon" href="img/Aaj_tak_logo.png" type="image/png">
 </head>
 <body>
-    
+    <nav>
+        <div class="main-nav container flex">
+            <a href="index.html" class="company-logo">
+                <img src="img/Aaj_tak_logo.png" alt="Company Logo">
+            </a>
+        
+        <div class="nav-links">
+            <ul class="flex">
+                <a href=""><li class="hover-links nav-items">Home</li></a>
+                <li class="hover-links nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                <li class="hover-links nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="hover-links nav-items" id="andrewtate" onclick="onNavItemClick('andrewtate')">Tate</li>
+                <li class="hover-links nav-items" id="movies" onclick="onNavItemClick('movies')">Movies</li>
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input type="text" class="news-input" id="searchtext" placeholder="e.g. Andrew Tate">
+            <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div> 
+    </nav>
+
+
+
+
+    <main>
+        <div class="cards-container container flex" id="card-container">
+            
+            
+        </div>
+    </main>
+
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="News-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo praesentium aliquam reiciendis dignissimos laudantium ullam ipsa vero natus repellat minima illo sed, inventore quibusdam adipisci molestiae mollitia ea iusto. Unde?</p>
+            </div>
+        </div>
+    </template>
+<script src="script.js"></script>
 </body>
 </html>
